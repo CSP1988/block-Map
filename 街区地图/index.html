@@ -14,12 +14,12 @@
       <div class="options-box sidenav" id="mySidenav">
         <h2 class="h2title">深圳火车站</h2>
 
-          <div>
+          <!-- <div>
               <input id="searchInput" type="input" data-bind="textInput: inputText">
-          </div>
+          </div> -->
           <div>
               <ul data-bind="foreach: markersSearch">
-                  <li data-bind="text: $data.title, click: $parent.goPosition"></li>
+                  <li style="list-style-type:none;" data-bind="text: $data.title, click: $parent.goPosition"></li>
             </ul>
           </div>
 
