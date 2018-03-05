@@ -5,18 +5,19 @@ html, body {
 }
 
 #map { 
-  height: 100%;
-  left: 335px;
-  bottom: 0px;
+  height: 93%;
+  width: 90%;
+  padding-left: 30px;
+ /*bottom: 0px;*/
   position: absolute;
-  right: 0px;
+  /*right: 0px;*/
 }
 
 .options-box {
   background: #fff;
   border: 1px solid #999;
   border-radius: 3px;
-  height: 100%;
+  height: 90%;
   line-height: 35px;
   padding: 10px 10px 30px 10px;
   text-align: left;
@@ -30,4 +31,23 @@ html, body {
 #searchInput{
   width: 100%;
   height: 35px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+   
+    overflow-x: hidden; /* Disable horizontal scroll */
+   
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+#map {
+    transition: margin-left .5s;
+    padding: 20px;
 }
