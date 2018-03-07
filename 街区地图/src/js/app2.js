@@ -210,25 +210,3 @@ function menuSwitch(){
         isClick = false;
     }
 }
-
-//http://api.map.baidu.com/telematics/v3/movie?qt=nearby_cinema &
-//location=116.307852,40.057023 &
-//ak=E4805d16520de693a3fe707cdc962045
-
-
-//电影院标记数组
-var cinemaMarkers = [];
-
-//搜索附近天气预报
-function weatherSearch(json){
-    // cinemaMarkers.forEach(function(cinema){
-    //     cinema.setMap(null);
-    // });
-
-    
-
-    // console.dir(`url = ${url}`);
-    
-
-    
-}
