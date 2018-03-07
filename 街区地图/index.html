@@ -11,19 +11,19 @@
   	</head>
   	<body>
   		<div class="container">
-      <div class="options-box sidenav" id="mySidenav">
-        <h2 class="h2title">深圳火车站</h2>
+          <div class="options-box sidenav" id="mySidenav">
+            <h2 class="h2title">深圳火车站</h2>
 
-          <!-- <div>
-              <input id="searchInput" type="input" data-bind="textInput: inputText">
-          </div> -->
-          <div>
-              <ul data-bind="foreach: markersSearch">
-                  <li style="list-style-type:none;" data-bind="text: $data.title, click: $parent.goPosition"></li>
-            </ul>
+            <!-- <div> -->
+                <input list-style-type: none; id="searchInput" type="input" data-bind="textInput: inputText">
+            <!-- </div> -->
+            <div>
+                <ul data-bind="foreach: markersSearch">
+                    <li data-bind="text: $data.title, click: $parent.goPosition"></li>
+                </ul>
+            </div>
+
           </div>
-
-        </div>
         <div id="map"></div>
       </div>
       
@@ -33,6 +33,6 @@
       src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCVzQnJzuMbpdRY2xjwkhxHbzoMgvMU4E8&callback=initMap" onerror="mapErrorHandler()"></script>	
 	    <script type="text/javascript" src="src/js/app2.js"></script>
       <script type="text/javascript" src="src/js/json.js"></script>
-            <script type="text/javascript" src="src/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+      
     </body>
 </html>
