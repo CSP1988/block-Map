@@ -25,13 +25,16 @@ html, body {
   text-align: center;
 }
 
+li {
+  list-style-type: none;
+  font-weight: bold
+  width: 180px;
+}
+
 #searchInput{
-  text-align: center;
-  width: 90%;
+  width: 94%;
   height: 35px;
-  
   padding-left: 10px;
-  /*padding-right: 10px;*/
 }
 
 /* 侧边导航栏 */

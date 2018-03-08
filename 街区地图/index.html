@@ -10,29 +10,29 @@
 	   
   	</head>
   	<body>
-  		<div class="container">
-          <div class="options-box sidenav" id="mySidenav">
-            <h2 class="h2title">深圳火车站</h2>
+    		<div class="container">
+            <div class="options-box sidenav" id="mySidenav">
+                <h2 class="h2title">深圳火车站</h2>
 
-            <!-- <div> -->
-                <input list-style-type: none; id="searchInput" type="input" data-bind="textInput: inputText">
-            <!-- </div> -->
-            <div>
-                <ul data-bind="foreach: markersSearch">
-                    <li data-bind="text: $data.title, click: $parent.goPosition"></li>
-                </ul>
+                <div>
+                    <input id="searchInput" placeholder="输入你要查找的地点" type="input" data-bind="textInput: inputText">
+                </div>
+                <div>
+                    <ul data-bind="foreach: markersSearch">
+                        <li data-bind="text: $data.title, click: $parent.goPosition"></li>
+                    </ul>
+                </div>
+
             </div>
-
-          </div>
-        <div id="map"></div>
-      </div>
+            <div id="map"></div>
+        </div>
       
     
     
-	<script async defer
-      src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCVzQnJzuMbpdRY2xjwkhxHbzoMgvMU4E8&callback=initMap" onerror="mapErrorHandler()"></script>	
-	    <script type="text/javascript" src="src/js/app2.js"></script>
-      <script type="text/javascript" src="src/js/json.js"></script>
+      	<script async defer
+            src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCVzQnJzuMbpdRY2xjwkhxHbzoMgvMU4E8&callback=initMap" onerror="mapErrorHandler()"></script>	
+  	    <script type="text/javascript" src="src/js/app.js"></script>
+        <script type="text/javascript" src="src/js/json.js"></script>
       
     </body>
 </html>
