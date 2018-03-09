@@ -17,11 +17,13 @@ function initMap(){
         zoom: 14
     });
 
-    //  天假自定义控件按钮
+    //自定义控件按钮
     var centerControlDiv = document.createElement('div');
     var centerControl = new CenterControl(centerControlDiv, map);
     //自定义控件位置
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(centerControlDiv);
+
+
 
     bounds = new google.maps.LatLngBounds();
     infowindow = new google.maps.InfoWindow();
@@ -41,6 +43,9 @@ function initMap(){
         bounds.extend(marker.position);
     })
     map.fitBounds(bounds);
+
+
+
     ko.applyBindings(new ViewModel(markers));
 }
 
@@ -146,18 +151,14 @@ var ViewModel = function(markers){
     self.goPosition = function(marker){
         self.currentPosition(marker);
         self.currentPosition().setAnimation(google.maps.Animation.DROP);
-        
         menuSwitch();
         setZoomCenter(marker);
-
+        google.maps.event.trigger(marker, "click");
     }
 }
 
-var mapErrorHandler = function(msg,url,l){
-    let text = "";
-    text = `网络连接错误\n错误信息：${msg}\n URL:${url}`
-    alert(text);
-
+var mapErrorHandler = function(){
+    alert('网络连接错误,稍后重试！');
 }
 
 /* 设置左边Search窗口为250px
