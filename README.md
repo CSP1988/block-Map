@@ -12,3 +12,6 @@
 
 ### 运行
 #### 在浏览器运行 index.html文件
+
+### 在线预览
+https://csp1988.github.io/blockMap/
