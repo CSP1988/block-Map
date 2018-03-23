@@ -15,4 +15,4 @@
 
 ## 在线预览
 https://csp1988.github.io/blockMap/
-（因为实用的是GoogleMap api，所以有时网络可能不会太通畅）
+（因为使用的是GoogleMap api，所以有时网络可能不会太通畅）
